@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .layer {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: 2s background-color;
+            font-size: 20px;
+        }
+        .layer h3 {
+            position: absolute;
+            bottom: 0;
+            transition: .3s;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+        .layer:hover h3 {
+            opacity: 1;
+            bottom: 70%;
+        }
+        .layer:hover {
+            background-color: rgba(226,0,0,.7);
+        }
+        .campus-col {
+            position: relative;
+            flex-basis: 32%;
+            overflow: hidden;
+            width: 33%;
+        }
+        .campus-col img {
+            width: 100%;
+        }
+        body {
+            display: flex;
+            gap: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="campus-col">
+        <img class="" src="eduford_img/london.png">
+        <div class="layer">
+            <h3>London</h3>
+        </div>
+    </div>
+    <a href="index.html" target="_blank" id="demo">klik</a>
+
+    <script>
+        let demo = document.getElementById("demo");
+
+        demo.addEventListener("click", (e) => {
+            // e.preventDefault();
+        })
+
+
+    </script>
+
+</body>
+
+</html>
